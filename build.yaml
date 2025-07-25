@@ -89,11 +89,11 @@ include:
 
     ### nice_oled START ###
     # nice_nano_v2 + nice_oled
-  - board: nice_nano_v2
-    shield: corne_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
-    artifact-name: nice_corne_left_oled
-    snippet: studio-rpc-usb-uart
+  # - board: nice_nano_v2
+  #   shield: corne_left nice_oled
+  #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
+  #   artifact-name: nice_corne_left_oled
+  #   snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
     shield: corne_right nice_oled
     artifact-name: nice_corne_right_oled
@@ -108,10 +108,10 @@ include:
   #   shield: corne_right nice_oled
   #   artifact-name: puchi_corne_right_oled
 
-  #   # peripheral_left + nice_nano_v2 + nice_oled
-  # - board: nice_nano_v2
-  #   shield: corne_left_peripheral nice_oled
-  #   artifact-name: nice_corne_left_peripheral_oled
+    # peripheral_left + nice_nano_v2 + nice_oled
+  - board: nice_nano_v2
+    shield: corne_left_peripheral nice_oled
+    artifact-name: nice_corne_left_peripheral_oled
 
   #   # peripheral_left + puchi_ble_v1 + nice_oled
   # - board: puchi_ble_v1
@@ -136,11 +136,11 @@ include:
 
     ### ProMicro_Dongle START ###
     # nice_nano_v2 dongle
-  - board: nice_nano_v2
-    shield: corne_dongle_pro_micro
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle\"
-    artifact-name: nice_corne_dongle_pro_micro
-    snippet: studio-rpc-usb-uart
+  # - board: nice_nano_v2
+  #   shield: corne_dongle_pro_micro
+  #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle\"
+  #   artifact-name: nice_corne_dongle_pro_micro
+  #   snippet: studio-rpc-usb-uart
     # snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: corne_dongle_pro_micro dongle_display
@@ -277,9 +277,9 @@ include:
   # ### SPLITKB AURORA SOFLE END ###
 
   # ### SETTINGS_RESET START ###
-  # - board: nice_nano_v2
-  #   shield: settings_reset
-  #   artifact-name: nice_settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: nice_settings_reset
   # - board: seeeduino_xiao_ble
   #   shield: settings_reset
   #   artifact-name: xiao_settings_reset
