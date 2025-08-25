@@ -8,8 +8,8 @@ manifest:
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -30,6 +30,10 @@ manifest:
     # oled Adapter
     - name: zmk-oled-adapter
       remote: mctechnology17
+      revision: main
+      #dongle screen
+    - name: zmk-dongle-screen
+      remote: janpfischer
       revision: main
   self:
     path: config
